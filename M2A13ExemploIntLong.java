@@ -16,4 +16,18 @@ public class M2A13ExemploIntLong {
 		System.out.println("Limite valor inteiro: " + 2_147_483_647); // numero avulso (int)
 		// System.out.println(2_147_483_648); // não compila. 
 	}
+
+    public static class M2A13ExemploFloatDouble {
+
+        public static void main(String[] args) {
+
+            // O compilador converte numeros reais avulsos para 'double' automaticamente:
+            double peso = 66.6d; // 'd' é opcional
+            System.out.println("Exemplo double: " + peso);
+
+            // float taxa2 = 1_294.93f; // não compila
+            float taxa = 1_294.93f; // float tem que ser sinalizado.
+            System.out.println("Exemplo float: " + taxa);
+        }
+    }
 }
